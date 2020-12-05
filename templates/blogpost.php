@@ -5,8 +5,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        <title>Opslag | Blog | <?php $defaultTitle; ?></title>
-        <meta name="description" content="FLUG blog opslag. <?php $defaultDescription; ?>">
+        <title>Opslag | Blog | <?php echo $defaultTitle; ?></title>
+        <meta name="description" content="FLUG blog opslag. <?php echo $defaultDescription; ?>">
 
         <link rel="canonical" href="<?php echo $domaine; ?>/">
 
@@ -20,16 +20,16 @@
         <!-- Social media -->
         <meta property="og:locale" content="da_DK">
         <meta property="og:type" content="website">
-        <meta property="og:title" content="Opslag | Blog | <?php $defaultTitle; ?>">
-        <meta property="og:description" content="FLUG blog opslag. <?php $defaultDescription; ?>">
+        <meta property="og:title" content="Opslag | Blog | <?php echo $defaultTitle; ?>">
+        <meta property="og:description" content="FLUG blog opslag. <?php echo $defaultDescription; ?>">
         <meta property="og:url" content="<?php echo $domaine; ?>/">
         <meta property="og:site_name" content="FLUG">
         <meta property="og:image" content="<?php echo $domaine; ?>/assets/social_media.jpg">
         <meta property="og:image:width" content="400">
         <meta property="og:image:height" content="400">
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Opslag | Blog | <?php $defaultTitle; ?>">
-        <meta name="twitter:description" content="FLUG blog opslag. <?php $defaultDescription; ?>">
+        <meta name="twitter:title" content="Opslag | Blog | <?php echo $defaultTitle; ?>">
+        <meta name="twitter:description" content="FLUG blog opslag. <?php echo $defaultDescription; ?>">
         <meta name="twitter:image" content="<?php echo $domaine; ?>/assets/social_media.jpg">
 
         <!-- Icons -->
