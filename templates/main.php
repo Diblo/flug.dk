@@ -1,20 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="description" content="Fyns Linux User Group">
-        <link href='http://fonts.googleapis.com/css?family=Mandali|Ubuntu:300|Oxygen+Mono|Ubuntu+Mono' rel='stylesheet' type='text/css'>
+
+        <title><?php $defaultTitle ?></title>
+        <meta name="description" content="<?php $defaultDescription ?>">
+
+        <link rel="canonical" href="<?php echo $domaine; ?>/">
+
+        <!-- mobile layout -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="theme-color" content="#29ABE1">
+        <meta name="msapplication-navbutton-color" content="#29ABE1">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <!-- Social media -->
+        <meta property="og:locale" content="da_DK">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="<?php $defaultTitle ?>">
+        <meta property="og:description" content="<?php $defaultDescription ?>">
+        <meta property="og:url" content="<?php echo $domaine; ?>/">
+        <meta property="og:site_name" content="FLUG">
+        <meta property="og:image" content="<?php echo $domaine; ?>/assets/social_media.jpg">
+        <meta property="og:image:width" content="400">
+        <meta property="og:image:height" content="400">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="<?php $defaultTitle ?>">
+        <meta name="twitter:description" content="<?php $defaultDescription ?>">
+        <meta name="twitter:image" content="<?php echo $domaine; ?>/assets/social_media.jpg">
+
+        <!-- Icons -->
+        <meta name="msapplication-TileImage" content="<?php echo $domaine; ?>/assets/favicon_270x270.png" />
+        <link rel="apple-touch-icon-precomposed" href="<?php echo $domaine; ?>/assets/favicon_180x180.png" />
+        <link rel="icon" href="<?php echo $domaine; ?>/assets/favicon_32x32.png" sizes="32x32" />
+        <link rel="icon" href="<?php echo $domaine; ?>/assets/favicon_192x192.png" sizes="192x192" />
+
+        <!-- Style -->
+        <link href="https://fonts.googleapis.com/css?family=Mandali|Ubuntu:300|Oxygen+Mono|Ubuntu+Mono" rel="stylesheet" type="text/css">
         <link href="/styles/main.css" media="all" type="text/css" rel="stylesheet"/>
         <link href="/styles/onepage-scroll.css" media="all" type="text/css" rel="stylesheet"/>
-        <script src="/js/jquery-1.11.3.min.js"></script>
-        <script src="/js/jquery.linkify.min.js"></script>
-        <script src="/js/jquery.onepage-scroll.min.js"></script>
-        <script src="/js/main.js"></script>
-        <script src="/js/common.js"></script>
-        <script src="/js/calendar.js"></script>
-        <title></title>
     </head>
     <body>
         <header id="header-area">
@@ -58,9 +85,6 @@
                         <div>
                             <a href="https://www.facebook.com/groups/flug.dk" target="_blank">
                                 <img src="/assets/fb_icon.png" alt="FB"/>
-                            </a>
-                            <a href="https://plus.google.com/communities/105454146240712904444" target="_blank">
-                                <img src="/assets/googleplus_icon.png" alt="GP"/>
                             </a>
                         </div>
                     </div>
@@ -107,6 +131,8 @@
                                 <li><a class="event-link" href="#2">Events</a></li>
                                 <li>/</li>
                                 <li><a class="who-link" href="#3">Hvem er flug?</a></li>
+                                <li>/</li>
+                                <li><a href="https://github.com/JoeX2/flug.dk" target="_blank">Bidrage</a></li>
                             </ul>
                         </div>
                         <div id="footer-findus">
@@ -122,21 +148,17 @@
                                         Facebook
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="https://plus.google.com/communities/105454146240712904444" target="_blank">
-                                        <img height="30" src="/assets/googleplus_icon.png" alt="GP"/>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://plus.google.com/communities/105454146240712904444" target="_blank">
-                                        Google+
-                                    </a>
-                                </li>
                             </ul>
                         </div>
                     </div>
                 </footer>
             </section>
         </div>
+        <script src="/js/jquery-1.11.3.min.js"></script>
+        <script src="/js/jquery.linkify.min.js"></script>
+        <script src="/js/jquery.onepage-scroll.min.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/common.js"></script>
+        <script src="/js/calendar.js"></script>
     </body>
 </html>
