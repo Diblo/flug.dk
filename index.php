@@ -3,7 +3,7 @@ require 'vendor/autoload.php';
 require 'libs/Calendar.php';
 require 'libs/Blog.php';
 
-$app = new \Slim\Slim();
+#$app = new \Slim\Slim();
 $app = new \Slim\Slim(array(
     'templates.path' => './templates',
     'debug' => true,
